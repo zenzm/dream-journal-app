@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Dream Journal</string>
+    <string name="btnDreamListActivity">Dreams</string>
+    <string name="btnSymbolListActivity">Interpretations</string>
+    <string name="btn_add_dream">Add Dream</string>
+    <string name="btn_add_symbol">Add Symbol</string>
+    <string name="lbl_description">Description</string>
+    <string name="lbl_date">Date</string>
+    <string name="btn_save">SAVE</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="lbl_category">Category</string>
+    <string-array name="spinner_data">
+        <item>Normal</item>
+        <item>Daydream</item>
+        <item>Lucid</item>
+        <item>False Awakening</item>
+        <item>Nightmare</item>
+    </string-array>
+    <string name="choose_one">Choose One</string>
+    <string name="lbl_name">Name</string>
 </resources>

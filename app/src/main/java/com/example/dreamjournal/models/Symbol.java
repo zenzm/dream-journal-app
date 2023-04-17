@@ -2,17 +2,22 @@ package com.example.dreamjournal.models;
 
 public class Symbol {
 
-    private int id;
+    private long id;
     private String name;
     private String description;
 
-    public Symbol(int id, String name, String description) {
+    public Symbol(long id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
     }
 
-    public int getId() {
+    public Symbol(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
+    public long getId() {
         return id;
     }
 
@@ -24,7 +29,7 @@ public class Symbol {
         return description;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -34,6 +39,17 @@ public class Symbol {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString(){
+        // TODO: make toString
+        return null;
+    }
+
+    public boolean isValid(){
+        // TODO: validation
+        return true;
     }
 }
 
