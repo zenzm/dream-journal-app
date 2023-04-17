@@ -44,7 +44,7 @@ public class SymbolListActivity extends AppCompatActivity {
         da = new CSVSymbolDataAccess(this);
         allSymbols = da.getAllSymbols();
 
-        // if there are no Symbol - navigate to details activity
+        // if there are no Symbols - navigate to details activity
         if (allSymbols == null || allSymbols.size() == 0) {
             Intent i = new Intent(this, SymbolDetailsActivity.class);
             startActivity(i);
@@ -54,15 +54,15 @@ public class SymbolListActivity extends AppCompatActivity {
     }
 
     public void example3(){
-        ArrayAdapter<Symbol> adapter = new ArrayAdapter(this, R.layout.custom_symbol_list_item, R.id.lblDescription, allSymbols){
+        ArrayAdapter<Symbol> adapter = new ArrayAdapter(this, R.layout.custom_symbol_list_item, R.id.lblSymbolDescription, allSymbols){
             @Override
             public View getView(int position, View convertView, ViewGroup parentListView){
 
                 // call the super method and get the view that it returns (an instance of our custom view)
                 View listItemView = super.getView(position, convertView, parentListView);
                 // get handles on the UI stuff that we want to control that are in the custom view)
-                TextView lblName = listItemView.findViewById(R.id.lblName);
-                TextView lblDescription = listItemView.findViewById(R.id.lblDescription);
+                TextView lblName = listItemView.findViewById(R.id.lblSymbolName);
+                TextView lblDescription = listItemView.findViewById(R.id.lblSymbolDescription);
                 // get the Symbol that is being displayed in the view
                 Symbol currentSymbol = allSymbols.get(position);
                 // bind the Symbol data to the view

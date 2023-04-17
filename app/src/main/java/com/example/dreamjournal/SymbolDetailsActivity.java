@@ -67,7 +67,7 @@ public class SymbolDetailsActivity extends AppCompatActivity {
         long id = i.getLongExtra(EXTRA_SYMBOL_ID, 0);
         if(id > 0){
             symbol = da.getSymbolById(id);
-            Log.d(TAG, symbol.toString());
+            //Log.d(TAG, symbol.toString());
             putDataIntoUI();
             btnDelete.setVisibility(View.VISIBLE);
         }

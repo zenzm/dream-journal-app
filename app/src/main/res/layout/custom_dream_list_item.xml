@@ -2,22 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF2CC"
     android:orientation="vertical">
 
 
     <TextView
+        android:id="@+id/lblDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#272642"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/lblCategory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="viewStart"
+        android:textColor="#272642"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/lblDescription"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#272642"
+        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/lblDueDate"
+    <View
+        android:id="@+id/view4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="15dp"
+        android:background="@color/purple_700" />
 
 </LinearLayout>

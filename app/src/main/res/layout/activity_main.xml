@@ -4,28 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="@drawable/dream_app_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="175dp" />
 
     <Button
         android:id="@+id/btnDreamListActivity"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="122dp"
         android:layout_margin="20dp"
+        android:backgroundTint="#534A87"
+        android:onClick="buttonPressed"
         android:text="@string/btnDreamListActivity"
-        android:onClick="buttonPressed"/>
+        android:textColor="#FFF2CC"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnSymbolListActivity"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="122dp"
         android:layout_margin="20dp"
+        android:backgroundTint="#534A87"
+        android:onClick="buttonPressed"
         android:text="@string/btnSymbolListActivity"
-        android:onClick="buttonPressed"/>
+        android:textColor="#FFF2CC"
+        android:textSize="20sp" />
 
 </LinearLayout>

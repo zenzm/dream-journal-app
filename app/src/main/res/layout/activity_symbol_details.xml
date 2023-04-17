@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SymbolDetailsActivity"
-    android:orientation="vertical">
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    tools:context=".SymbolDetailsActivity">
 
     <TextView
         android:id="@+id/lblName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_name"/>
+        android:text="@string/lbl_name" />
 
     <EditText
         android:id="@+id/txtName"
@@ -44,6 +45,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_delete"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
 </LinearLayout>

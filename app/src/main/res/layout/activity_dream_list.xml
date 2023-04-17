@@ -4,20 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".DreamListActivity"
-    android:orientation="vertical">
+    tools:context=".DreamListActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
 
     <Button
         android:id="@+id/btnAddDream"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_add_dream" />
+        android:layout_height="61dp"
+        android:layout_margin="20dp"
+        android:text="@string/btn_add_dream"
+        android:textColor="#FFF2CC"
+        android:textSize="16sp" />
 
     <ListView
         android:id="@+id/lsDreams"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </ListView>
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"></ListView>
 
 </LinearLayout>

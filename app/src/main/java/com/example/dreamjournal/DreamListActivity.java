@@ -62,6 +62,7 @@ public class DreamListActivity extends AppCompatActivity {
                 // call the super method and get the view that it returns (an instance of our custom view)
                 View listItemView = super.getView(position, convertView, parentListView);
                 // get handles on the UI stuff that we want to control that are in the custom view)
+                TextView lblCategory = listItemView.findViewById(R.id.lblCategory);
                 TextView lblDescription = listItemView.findViewById(R.id.lblDescription);
                 TextView lblDueDate = listItemView.findViewById(R.id.lblDueDate);
                 // get the Dream that is being displayed in the view
@@ -69,6 +70,7 @@ public class DreamListActivity extends AppCompatActivity {
                 // bind the Dream data to the view
                 SimpleDateFormat dateFormat = new SimpleDateFormat("M/d/yyyy");
                 String dateStr = dateFormat.format(currentDream.getDate());
+                lblCategory.setText(currentDream.getCategory());
                 lblDescription.setText(currentDream.getDescription());
                 lblDueDate.setText(dateStr);
 
