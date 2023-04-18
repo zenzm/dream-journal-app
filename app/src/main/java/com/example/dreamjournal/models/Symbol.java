@@ -43,12 +43,16 @@ public class Symbol {
 
     @Override
     public String toString(){
-        // TODO: make toString
-        return null;
+        return String.format("ID: %d NAME: %s DESC: %s", id, name, description);
     }
 
     public boolean isValid(){
-        // TODO: validation
+        if(this.name.isEmpty()){
+            return false;
+        }
+        if(this.description.isEmpty()){
+            return false;
+        }
         return true;
     }
 }

@@ -57,12 +57,17 @@ public class Dream {
 
     @Override
     public String toString(){
-        // TODO: make toString
-        return null;
+        String dateStr = date != null ? date.toString() : "NULL";
+        return String.format("ID: %d DESC: %s DATE: %s", id, description, date);
     }
 
     public boolean isValid(){
-        // TODO: validation
+        if(this.description.isEmpty()){
+            return false;
+        }
+        if(this.date == null){
+            return false;
+        }
         return true;
     }
 }
